@@ -5,7 +5,7 @@ from telegram import Update #nos va permitir estar actualizando nuestro para ver
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 
-TOKEN = "7726670264:AAF4Kd5AJ2UoSrGHlgBUMtfhCOeb-BZZarU"
+TOKEN = "mitoken"
 
 USUARIO = "@Jadx_Bot"
 
