@@ -31,24 +31,24 @@ async def help_command(update : Update, context : ContextTypes.DEFAULT_TYPE):
 
 async def redes(update : Update, context : ContextTypes.DEFAULT_TYPE):
     #await: significa que el programa tiene que esperar a que se cumpla lo que esta dentro del codigo
-     await update.message.reply_text("https://linktr.ee/putenojada?fbclid=PAZXh0bgNhZW0CMTEAAabfogM-AawzyR6Vs7TasK__dby9JYtnvSQOy07I3u6oF38-vKNIyY9iDWY_aem_gaHde8vb81qGzvgiI7blVg")
+     await update.message.reply_text("link")
 
-async def fansly(update : Update, context : ContextTypes.DEFAULT_TYPE):
+async def link(update : Update, context : ContextTypes.DEFAULT_TYPE):
     #await: significa que el programa tiene que esperar a que se cumpla lo que esta dentro del codigo
-     await update.message.reply_text("https://fansly.com/Putenojada")
+     await update.message.reply_text("https://link.com/PageName")
 
 # Comando para "/ultimopost"
 async def ultimopost(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Aquí está el último contenido: [https://www.instagram.com/p/DBQEgbSsmpL/]")
+    await update.message.reply_text("Aquí está el último contenido: [https://www.instagram.com]")
 #------------------------------------------------------------#
 
 #mesaje temporales de redes (intervalo cada 5 horas)
 #------------------------------------------------------------#
 
 messages = [
-    "Visiten mi instagram! https://www.instagram.com/putenojada/",
-    "Miren mi ultimo Tiktok! https://www.tiktok.com/@putenojada",
-    "Siganme en mi Fansly para Divertinos https://fansly.com/Putenojada"
+    "Visiten mi instagram! https://www.instagram.com",
+    "Miren mi ultimo Tiktok! https://www.tiktok.com",
+    "Siganme en mi Fansly para Divertinos https://twitter.com"
 ]
 
 async def send_cyclic_messages(context: ContextTypes.DEFAULT_TYPE):
@@ -71,11 +71,11 @@ def respuesta(texto):
     elif "adios" in texto:
         return "adios!!"
 
-    elif "hermosa" in texto:
-        return "Graciaas bby!!"
+    elif "hermoso" in texto:
+        return "Graciaas!!"
     
     elif "beautiful" in texto:
-        return "thanks bby!!"
+        return "thanks!!"
     elif "info" in texto:
         return "Hablame al privado / talk to md"
     
@@ -109,7 +109,7 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("start",inicio))
     app.add_handler(CommandHandler("help",help_command))
     app.add_handler(CommandHandler("redes",redes))
-    app.add_handler(CommandHandler("fansly",fansly))
+    app.add_handler(CommandHandler("fansly",link))
     app.add_handler(CommandHandler("ultimopost",ultimopost))
     
 
